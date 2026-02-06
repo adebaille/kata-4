@@ -6,7 +6,7 @@ const error = document.querySelector("#form-error");
 const filterButtons = document.querySelectorAll("[data-filter]");
 
 let tasks = [];
-let currentFilter = "all"; // all | todo | done
+let currentFilter = "all";
 
 function render() {
   // TODO: filtrer tasks selon currentFilter
