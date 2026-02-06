@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>ToDo app</title>
+</head>
+<body>
+  <main class="app">
+  <header class="app__header">
+    <h1>FocusBoard</h1>
+    <p class="subtitle">Une mini app pour organiser tes tâches.</p>
+  </header>
+
+  <section class="card">
+    <h2>Ajouter une tâche</h2>
+
+    <form id="task-form">
+      <label for="task-input">Nouvelle tâche</label>
+      <div class="row">
+        <input id="task-input" name="task" type="text" placeholder="Ex: relire le kata DOM" />
+        <button type="submit">Ajouter</button>
+      </div>
+
+      <p id="form-error" role="alert" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Liste</h2>
+
+    <div class="filters" role="tablist" aria-label="Filtres des tâches">
+      <button type="button" data-filter="all">Toutes</button>
+      <button type="button" data-filter="todo">À faire</button>
+      <button type="button" data-filter="done">Faites</button>
+    </div>
+
+    <p class="counters" id="counters"></p>
+
+    <ul id="task-list" class="list" aria-label="Liste des tâches"></ul>
+  </section>
+</main>  
+</body>
+</html>
