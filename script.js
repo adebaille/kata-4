@@ -12,6 +12,7 @@ function render() {
   // TODO: filtrer tasks selon currentFilter
   // TODO: mettre à jour le compteur
   // TODO: générer le HTML de la liste (li)
+  
 }
 
 function addTask(label) {
